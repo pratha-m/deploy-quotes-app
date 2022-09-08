@@ -40,7 +40,7 @@ fetchQuotes=async(url,imgUrl)=>{
         console.log(error);
     }
 }
-fetchQuotes("./quotesApi.json","./imagesApi.json");
+fetchQuotes("./quotesApi.json","https://pixabay.com/api/?key=24759661-05cb0b971b3d65286bf7147d2&q=motivation&image_type=photo&pretty=true");
 let makePaginationBtns=(noOfPaginationBtns)=>{
     for(i=1;i<=noOfPaginationBtns;i++){
         let eachBtn=document.createElement("div");
